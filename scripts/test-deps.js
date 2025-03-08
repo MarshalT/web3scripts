@@ -23,23 +23,23 @@ async function testDependencies(walletData, args) {
     
     // 返回测试结果
     return {
-        // axios: {
-        //     working: true,
-        //     data: response.data
-        // },
-        ethers: {
-            working: true,
-            address: wallet.address,
-            mnemonic: wallet.mnemonic?.phrase
-        },
-        fs: {
-            working: true,
-            testData: readBack
-        },
-        time: new Date().toISOString()
+        success: true,
+        data: {
+            // axios: {
+            //     working: true,
+            //     data: response.data
+            // },
+            ethers: {
+                working: true,
+                data: wallet
+            },
+            fs: {
+                working: true,
+                data: readBack
+            }
+        }
     };
 }
-
 // 导出函数
 module.exports = {
     testDependencies
