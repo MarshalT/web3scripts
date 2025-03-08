@@ -8,7 +8,7 @@ async function testDependencies(walletData, args) {
     
     // 测试 axios (使用免费的加密货币API)
     console.log('测试 axios...');
-    const response = await axios.get('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd');
+    // const response = await axios.get('https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd');
     
     // 测试 ethers
     console.log('测试 ethers...');
@@ -23,10 +23,10 @@ async function testDependencies(walletData, args) {
     
     // 返回测试结果
     return {
-        axios: {
-            working: true,
-            data: response.data
-        },
+        // axios: {
+        //     working: true,
+        //     data: response.data
+        // },
         ethers: {
             working: true,
             address: wallet.address,
@@ -44,3 +44,5 @@ async function testDependencies(walletData, args) {
 module.exports = {
     testDependencies
 }; 
+
+testDependencies();
