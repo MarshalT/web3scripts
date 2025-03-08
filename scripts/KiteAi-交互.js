@@ -544,9 +544,5 @@ process.on('unhandledRejection', (error) => {
 
 // 导出函数
 module.exports = {
-    main,
-    loadProxies,
-    KiteAIAutomation,
-    WalletSession,
-    WalletStatistics
+    main
 };

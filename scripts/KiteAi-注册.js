@@ -534,8 +534,5 @@ async function testBasic(walletData, args = {}) {
 
 // 导出函数
 module.exports = {
-    main,
-    testSingleWallet,
-    processWallet,
-    testBasic
+    main
 }
