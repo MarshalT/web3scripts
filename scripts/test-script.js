@@ -5,7 +5,7 @@ function testFunction(walletData, args) {
     return {
         message: '测试成功',
         time: new Date().toISOString()
-        //
+        //123456
     };
 }
 
