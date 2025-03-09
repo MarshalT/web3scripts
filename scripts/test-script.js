@@ -4,9 +4,10 @@ async function testFunction(walletData, args) {
     console.log('参数:', args);
     return {
         success: true,
-        message: '测试成功',
-        time: new Date().toISOString()
-        //123456
+        data: {
+            message: '测试成功',
+            time: new Date().toISOString()
+        }
     };
 }
 

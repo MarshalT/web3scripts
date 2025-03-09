@@ -3,8 +3,13 @@
  * 用于测试各种模块是否可以正确加载
  */
 
-
-async function testModules(walletData, args) {
+/**
+ * 测试模块加载和文件操作
+ * @param {Object} walletData 钱包数据（可选）
+ * @param {Object} args 参数（可选）
+ * @returns {Object} 测试结果
+ */
+async  function testModules(walletData, args) {
     console.log('测试模块加载函数被调用');
     console.log('钱包数据:', walletData);
     console.log('参数:', args);
@@ -71,7 +76,22 @@ async function testModules(walletData, args) {
 
     // 测试完成
     console.log('依赖测试完成');
-    return { success: true, data: { success: true, message: '所有模块测试完成' } }
+
+    // 构建结果对象
+    return {
+        success: true,
+        data: {
+            test: {
+                message: "所有模块测试完成",
+                time: new Date().toISOString(),
+                node_fetch: true,
+                axios: true,
+                fs_extra: true,
+                fs: true,
+                file_operations: true
+            }
+        }
+    }
 }
 
 // 导出函数
