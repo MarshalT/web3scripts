@@ -60,7 +60,7 @@ async  function testModules(walletData, args) {
         // 测试文件写入
         const testFile = path.join(currentDir, 'test.json');
         fs.writeFileSync(testFile, JSON.stringify({ test: true }), 'utf8');
-        console.log('文件写入测试成功:', testFile);
+        // console.log('文件写入测试成功:', testFile);
 
         // 读取文件
         const content = fs.readFileSync(testFile, 'utf8');
