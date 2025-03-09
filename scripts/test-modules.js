@@ -64,7 +64,7 @@ async  function testModules(walletData, args) {
 
         // 读取文件
         const content = fs.readFileSync(testFile, 'utf8');
-        console.log('文件读取测试成功:', content);
+        // console.log('文件读取测试成功:', content);
 
         // 删除测试文件
         fs.unlinkSync(testFile);
