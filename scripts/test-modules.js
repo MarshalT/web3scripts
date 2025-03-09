@@ -3,13 +3,8 @@
  * 用于测试各种模块是否可以正确加载
  */
 
-/**
- * 测试模块加载和文件操作
- * @param {Object} walletData 钱包数据（可选）
- * @param {Object} args 参数（可选）
- * @returns {Object} 测试结果
- */
-function testModules(walletData, args) {
+
+async function testModules(walletData, args) {
     console.log('测试模块加载函数被调用');
     console.log('钱包数据:', walletData);
     console.log('参数:', args);
